@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Industrial</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Wedding</div>
+        <div class="hamburger" id="hamburgerMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar" id="navbar">
+            <ul>
+                <li><a href="#Quotes">Quotes</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Story">Story</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Event">Event</a></li>
+                <li><a href="#Specialguest">Guest</a></li>
+                <li><a href="#RSVP">RSVP</a></li>
+                <li><a href="#Gift">Gift</a></li>
+                <li><a href="#Message">Message</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home">
+        <div class="Home">
+            <img src="assets/img/bunga.png" alt="Dekor" id="dekor-home">
+            <img src="assets/img/bunga2.png" alt="Dekor" id="dekor-home2">
+            <div class="Nama">
+                <h1>Shiro & Ayaka</h1>
+                <h2>Untuk Tamu yang terhormat</h2>
+                <button class="button" id="scrollToQuotesBtn" onclick="bukaUndangan()">Buka undangan</button>
+            </div>
+        </div>
+
+    </section>
+    <div id="kotakmusik">
+        <audio id="lagu" loop>
+            <source src="assets/audio/romantic.mp3">
+            audio tidak dapat diputar
+        </audio>
+        <div onclick="putar()" id="tombol-musik">
+            <img id="kontrol" src="assets/img/play.png " alt="" width="50px">
+        </div>
+        <section id="Quotes" class="wedding-quotes">
+            <div class="container-quotes">
+            </div>
+            <h2 class="judul" style="margin-top: 10px;">Quotes</h2>
+                <img src="assets/img/bunga.png" alt="Dekor" id="dekor-quotes">
+                <img src="assets/img/bunga2.png" alt="Dekor" id="dekor-quotes2">
+                <div class="kartu-quote">
+                    <div class="decorative-element t-l"></div>
+                    <div class="decorative-element b-r"></div>
+                    <div class="isi-quote">
+                        <h3 class="surat">Ayat Al-Quran</h3>
+                        <p class="arab">
+                            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+                            وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+                        </p>
+                        <p class="translate">
+                            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan jenismu
+                            sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu
+                            rasa kasih dan sayang." (QS. Ar-Rum: 21)
+                        </p>
+                    </div>
+                </div>
+                </section>
+                <div class="audio-container">
+                    <h4 class="audio-title">Dengarkan Bacaan Ayat</h4>
+                    <audio class="custom-audio" controls>
+                        <source src="assets/audio/ar-rum-21.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+    </div>
+    </section>
+
+    <section id="About">
+        <h2 class="judul">About</h2>
+        <div class="container-about">
+            <div class="pengantin">
+                <img class="profile" src="assets/img/The groom.jpg" alt="Shiro" width="100px" height="100px">
+                <h2>Shiro</h2>
+                <p> Putra dari Pak Rajata</p>
+                <p>Putra dari Ibu Sadina </p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/?hl=id" target="_blank"><img src="assets/img/instagram.png"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/?locale=id_ID" target="_blank"><img src="assets/img/facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://x.com/?lang=id&mx=2" target="_blank"><img src="assets/img/twitter.png"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="pengantin">
+                <img class="profile" src="assets/img/The Bride.jpg " alt="Patricia Knott" width="100px" height="100px">
+                <h2>Ayaka</h2>
+                <p>Putri dari  Pak Vinsen </p>
+                <p>Putri dari Ibu Michelle </p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/?hl=id" target="_blank"><img src="assets/img/instagram.png"
+                            alt="instagram"></a>
+                    <a href="https://www.facebook.com/?locale=id_ID" target="_blank"><img src="assets/img/facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://x.com/?lang=id&mx=2" target="_blank"><img src="assets/img/twitter.png"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+    </section>
+
+    <section id="Story">
+        <h2 class="judul">Story</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <img src="assets/img/First Meet.jpg" alt="Engagement" class="timeline-image">
+                <div class="timeline-content">
+                    <h2>Bertemu</h2>
+                    <p class="date">June 15, 2022</p>
+                    <p>Dua karakter utama, Shiro dan Ayaka, bertemu secara tidak sengaja di sebuah acara amal. Keduanya
+                        sedang tidak mencShiro hubungan, namun percakapan mereka yang penuh kejujuran dan spontanitas
+                        membuat mereka tertShirok satu sama lain. Meski hanya pertemuan singkat, ada koneksi yang mendalam
+                        .</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <img src="assets/img/event2.jpg" alt="Venue Booked" class="timeline-image">
+                <div class="timeline-content">
+                    <h2>Pendekatan</h2>
+                    <p class="date">August 3, 2022</p>
+                    <p>Setelah beberapa minggu tidak bertemu, mereka bertemu kembali di sebuah kafe favorit mereka, kali
+                        ini dengan niat yang lebih jelas untuk mengenal satu sama lain. Shiro mulai mengajak Ayaka untuk
+                        bertemu lebih sering, dan Ayaka merasa nyaman dengan kehadiran Shiro. Hubungan mereka berkembang
+                        dengan cepat, Shiro sekedar teman menjadi lebih dekat. Mereka berbagi banyak minat yang sama, dan
+                        merasa ada kecocokan yang kuat. </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <img src="assets/img/event1.jpg" alt="Save the Dates" class="timeline-image">
+                <div class="timeline-content">
+                    <h2>Pacaran</h2>
+                    <p class="date">September 20, 2024</p>
+                    <p>Shiro mengambil langkah besar dan melamar Ayaka, meskipun mereka belum memutuskan apakah akan bersama di kota yang sama. Lamaran ini membuat Ayaka sadar bahwa meskipun ada banyak tantangan, cintanya kepada Shiro lebih kuat daripada rasa takutnya. Mereka akhirnya memutuskan untuk menghadapi semua masalah ini bersama-sama. </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <img src="assets/img/industrial-couple.jpg" alt="Wedding Day" class="timeline-image">
+                <div class="timeline-content">
+                    <h2>Nikah</h2>
+                    <p class="date">December 21, 2024</p>
+                    <p>Dalam upacara pernikahan yang sederhana namun penuh makna, mereka berjanji untuk saling mendukung, tidak peduli sejauh apa pun mereka terpisah oleh jarak atau tantangan hidup lainnya. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Gallery">
+
+        <div class="container-gallery">
+            <h2 class="judul">Gallery</h2>
+            <video width="250" height="200" controls id="video">
+                <source
+                    src="assets/video/Beautiful couple beautiful details! Industrial Texas Wedding at Brake and Clutch Dallas Wedding.mp4"
+                    type="video/mp4">
+                <source
+                    src="assets/video/Beautiful couple beautiful details! Industrial Texas Wedding at Brake and Clutch Dallas Wedding.ogg"
+                    type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+
+            <div class="foto-gallery">
+                <div class="column">
+                    <div class="foto">
+                        <img src="assets/img/First Meet.jpg" alt="" id="foto1">
+                    </div>
+                    <div class="foto">
+                        <img src="assets/img/first-date.jpg" alt="" id="foto2">
+                    </div>
+                    <div class="foto">
+                        <img src="assets/img/Gambar2.jpg" alt="" id="foto3">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="foto">
+                        <img src="assets/img/gambar 7.jpg" alt="" id="foto4">
+                    </div>
+                    <div class="foto">
+                        <img src="assets/img/Gambar 8.jpg" alt="" id="foto5">
+                    </div>
+                    <div class="foto">
+                        <img src="assets/img/Gambar5.jpg" alt="" id="foto6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Event">
+
+        <div class="event-map">
+            <h2 class="judul">Event</h2>
+            <h5 class="description-event"> Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebun sea vero ipsum
+                eirmod
+                tempor kasd. Diam amet lorem erat eos sit lorem elitr justo.</h5>
+            <div class="iframe-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.156663956242!2d106.99214747316765!3d-6.2430743611281665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c301b6de30b%3A0x3abfcfc9504c62bf!2sGraha%20Hartika!5e0!3m2!1sid!2sid!4v1728048866258!5m2!1sid!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="container-event">
+            <div class="event">
+                <img src="assets/img/event1.jpg" alt="The Reception">
+                <h2>Resepsi</h2>
+                <p>Graha Hartika, Bekasi, Indonesia</p>
+                <p>21 December 2024, 11:00AM - 19:00PM</p>
+                <a href="https://calendar.google.com/calendar/u/0/r/eventedit/NDlubmxqNXJ1djQwM2lqNzlkYThnN2dmMnEgeWFzaXJrZW56aWVAbQ?pli=1"
+                    target="_blank">
+                    <button class="calendar">Calendar</button>
+                </a>
+            </div>
+            <div class="event">
+                <img src="assets/img/event2.jpg" alt="Wedding Party">
+                <h2>Pernikahan</h2>
+                <p>Graha Hartika, Bekasi, Indonesia</p>
+                <p>21 December 2024, 11:00AM - 19:00PM </p>
+                <a href="https://calendar.google.com/calendar/u/0/r/eventedit/NDlubmxqNXJ1djQwM2lqNzlkYThnN2dmMnEgeWFzaXJrZW56aWVAbQ?pli=1"
+                    target="_blank">
+                    <button class="calendar">Calendar</button>
+                </a>
+            </div>
+        </div>
+
+        <section id="Specialguest">
+            <h2 class="judul">Special Guest</h2>
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr class="highlight">
+                    <td>1</td>
+                    <td>Keluarga Mempelai Pria</td>
+                    <td>Jl. Anggrek 5 no.342</td>
+                    <td>Keluarga Inti</td>
+                </tr>
+                <tr class="highlight">
+                    <td>2</td>
+                    <td>Keluarga Mempelai Wanita</td>
+                    <td>Jl. Mangga 2 no.10</td>
+                    <td>Keluarga Inti</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ust Jafar</td>
+                    <td>Jl. Jeruk 5 no.19</td>
+                    <td>Penghulu</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Alika Hasanah</td>
+                    <td>Jl. Pantura </td>
+                    <td>Sahabat Dekat</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Slamet Nainggolan</td>
+                    <td>Jl. Monginsidi no 12</td>
+                    <td>Sahabat Dekat</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="RSVP">
+            <h2 class="judul">RSVP</h2>
+            <div class="container-rsvp">
+                <h1>RSVP</h1>
+                <form id="rsvpForm">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon:</label>
+                        <input type="tel" id="telepon" name="telepon" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kehadiran:</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" id="hadir" name="kehadiran" value="hadir" required>
+                                Hadir
+                            </label>
+                            <label>
+                                <input type="radio" id="tidak_hadir" name="kehadiran" value="tidak_hadir">
+                                Tidak Hadir
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jumlah_tamu">Jumlah Tamu:</label>
+                        <select id="jumlah_tamu" name="jumlah_tamu">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pilihan Tambahan:</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" id="vegetShiroan" name="pilihan_tambahan" value="vegetShiroan">
+                                Menu Vegetarian
+                            </label>
+                            <label>
+                                <input type="checkbox" id="alergi" name="pilihan_tambahan" value="alergi">
+                                Alergi Makanan
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan Tambahan:</label>
+                        <textarea id="pesan" name="pesan"></textarea>
+                    </div>
+
+                    <input type="submit" value="Kirim RSVP">
+                </form>
+            </div>
+            <div id="thankYouMessage" style="display: none;">
+                <h2>Terima kasih atas kedatangan Anda!</h2>
+                <p>Kami sangat menghargai partisipasi Anda dalam acara kami.</p>
+            </div>
+        </section>
+        <section id="Gift">
+            <h2 class="judul">Gift</h2>
+            <div class="card">
+
+                <div class="decoration top-left">❧</div>
+                <div class="decoration bottom-right">❧</div>
+                <div class="card-content">
+                    <div class="left-side">
+                        <h2>Bank</h2>
+                        <div>
+                            <div class="account-number" id="accountNumber">5834 3114 8400 </div>
+                            <button class="copy-btn" onclick="copyAccountNumber()">Salin Nomor</button>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="img-bank">
+                            <img src="assets/img/bank.png" alt="QR Code" width="100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-gopay">
+                <div class="decoration2 top-left2">❧</div>
+                <div class="decoration2 bottom-right2">❧</div>
+                <div class="card-content2">
+                    <div class="left-side2">
+                    </div>
+                    <div class="right-side2">
+                        <h2>Gopay</h2>
+                        <div class="qr-code2">
+
+                            <img src="assets/img/qr-code.png" alt="QR Code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Message">
+            <div class="container-message">
+                <h2 class="judul">Message </h2>
+                <div class="message">
+                    <h2 class="message-title">Pesan untuk Pengantin</h2>
+                    <form id="messageForm">
+                        <div class="form-group2">
+                            <label for="name">Nama Anda:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group2">
+                            <label for="message">Pesan Anda:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" id="message-button">Kirim Pesan</button>
+                    </form>
+                </div>
+                <div id="messageDisplay"></div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="thank-you">Terima kasih dari Pengantin</p>
+                <p class="copyright">&copy; 2024 Kenzie Yasir Arrafi.</p>
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Kembali ke
+                    Atas</button>
+            </div>
+        </footer>
+</body>
+
+</html>
